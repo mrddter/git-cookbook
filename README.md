@@ -6,7 +6,6 @@
 git pull origin master
 ```
 
-
 ## Reset all changes
 
 ```
@@ -41,4 +40,15 @@ git reset --hard HEAD~1
 git branch -a
 git branch -D <remote> <branch>
 git push <remote> --delete <branch>
+```
+
+## Cleanup all history commits
+
+```
+git checkout --orphan latest_branch
+git add -A
+git commit -am "cleanup history commits"
+git branch -D master
+git branch -m master
+git push -f origin master
 ```
