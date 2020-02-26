@@ -1,5 +1,12 @@
 # Git Commands
 
+## Align specific branch with master
+
+```
+git pull origin master
+```
+
+
 ## Reset all changes
 
 ```
@@ -26,4 +33,12 @@ git reset --soft HEAD~1
 
 ```
 git reset --hard HEAD~1
+```
+
+## Delete local and remote branch
+
+```
+git branch -a
+git branch -D <remote> <branch>
+git push <remote> --delete <branch>
 ```
