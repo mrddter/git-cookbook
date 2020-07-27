@@ -63,3 +63,11 @@ git remote add origin https://github.com/mrddter/new_repository
 git push -u origin master
 (optional) git push -f origin master
 ```
+
+## Change git user
+
+```git
+git config --list
+git config user.email my@email.com
+git config user.name "myname"
+```
