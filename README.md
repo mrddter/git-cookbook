@@ -72,7 +72,7 @@ git config user.email my@email.com
 git config user.name "myname"
 ```
 
-### Change git user (globally)
+## Change git user (globally)
 
 ```git
 git config --list
