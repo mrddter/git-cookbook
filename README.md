@@ -47,10 +47,16 @@ git push <remote> --delete <branch>
 ```git
 git checkout --orphan latest_branch
 git add -A
-git commit -am "cleanup history commits"
+git commit -am "shrink commits"
 git branch -D master
 git branch -m master
 git push -f origin master
+```
+
+chained all in one command
+
+```git
+git checkout --orphan latest_branch && git add -A && git commit -am "shrink commits" && git branch -D master && git branch -m master && git push -f origin master
 ```
 
 ## Add new repo to existing folder
