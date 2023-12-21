@@ -47,7 +47,7 @@ git push <remote> --delete <branch>
 ```git
 git checkout --orphan latest_branch
 git add -A
-git commit -am "shrink commits"
+git commit -am "clean up"
 git branch -D main
 git branch -m main
 git push -f origin main
