@@ -97,3 +97,10 @@ git config --list
 git config --global user.email my@email.com
 git config --global user.name "myname"
 ```
+
+## Merge two branches
+
+```git
+git checkout <to-branch>
+git merge <from-branch>
+```
