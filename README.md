@@ -65,9 +65,21 @@ git checkout --orphan latest_branch && git add -A && git commit -am "shrink comm
 git init
 git add .
 git commit -m "first release"
-git remote add origin https://github.com/mrddter/new_repository
+git remote add origin git@github.com:mrddter/new_repository.git
 git push -u origin master
 (optional) git push -f origin master
+```
+
+## Change remote url
+
+```git
+git remote set-url origin git@github.com:mrddter/new_repository.git
+```
+
+Verify that the remote URL has changed:
+
+```git
+git remote -v
 ```
 
 ## Change git user
