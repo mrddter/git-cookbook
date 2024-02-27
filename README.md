@@ -1,16 +1,16 @@
 # Git Commands
 
-## Align specific branch with master
+## Align specific branch with main
 
 ```git
-git pull origin master
+git pull origin main
 ```
 
 ## Reset all changes
 
 ```git
 git fetch origin
-git reset --hard origin/master
+git reset --hard origin/main
 git clean -fdx
 git pull
 ```
@@ -47,16 +47,16 @@ git push <remote> --delete <branch>
 ```git
 git checkout --orphan latest_branch
 git add -A
-git commit -am "shrink commits"
-git branch -D master
-git branch -m master
-git push -f origin master
+git commit -am "clean up"
+git branch -D main
+git branch -m main
+git push -f origin main
 ```
 
 chained all in one command
 
 ```git
-git checkout --orphan latest_branch && git add -A && git commit -am "shrink commits" && git branch -D master && git branch -m master && git push -f origin master
+git checkout --orphan latest_branch && git add -A && git commit -am "shrink commits" && git branch -D main && git branch -m main && git push -f origin main
 ```
 
 ## Add new repo to existing folder
@@ -66,8 +66,8 @@ git init
 git add .
 git commit -m "first release"
 git remote add origin git@github.com:mrddter/new_repository.git
-git push -u origin master
-(optional) git push -f origin master
+git push -u origin main
+(optional) git push -f origin main
 ```
 
 ## Change remote url
