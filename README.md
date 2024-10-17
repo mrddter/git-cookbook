@@ -56,7 +56,7 @@ git push -f origin main
 chained all in one command
 
 ```git
-git checkout --orphan latest_branch && git add -A && git commit -am "shrink commits" && git branch -D main && git branch -m main && git push -f origin main
+git checkout --orphan latest_branch && git add -A && git commit -am "clean up" && git branch -D main && git branch -m main && git push -f origin main
 ```
 
 ## Add new repo to existing folder
