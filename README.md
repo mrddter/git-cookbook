@@ -39,8 +39,13 @@ git reset --hard HEAD~1
 ```git
 git branch -a
 git branch -d <local-branch>
-git branch -D <remote> <branch>
 git push <remote> --delete <branch>
+```
+
+To force the local delete, use:
+
+```git
+git branch -D <local-branch>
 ```
 
 ## Cleanup all history commits
@@ -54,7 +59,7 @@ git branch -m main
 git push -f origin main
 ```
 
-chained all in one command
+Chained all in one command:
 
 ```git
 git checkout --orphan latest_branch && git add -A && git commit -am "clean up" && git branch -D main && git branch -m main && git push -f origin main
