@@ -38,6 +38,7 @@ git reset --hard HEAD~1
 
 ```git
 git branch -a
+git branch -d <local-branch>
 git branch -D <remote> <branch>
 git push <remote> --delete <branch>
 ```
