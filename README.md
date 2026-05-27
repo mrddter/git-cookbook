@@ -53,7 +53,7 @@ git branch -D <local-branch>
 ```git
 git checkout --orphan latest_branch
 git add -A
-git commit -am "clean up"
+git commit -am "init"
 git branch -D main
 git branch -m main
 git push -f origin main
@@ -62,7 +62,7 @@ git push -f origin main
 Chained all in one command:
 
 ```git
-git checkout --orphan latest_branch && git add -A && git commit -am "clean up" && git branch -D main && git branch -m main && git push -f origin main
+git checkout --orphan latest_branch && git add -A && git commit -am "init" && git branch -D main && git branch -m main && git push -f origin main
 ```
 
 ## Add new repo to existing folder
